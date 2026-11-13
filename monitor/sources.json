@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rfb-marcos",
+    "name": "Receita Federal — Marcos regulatórios",
+    "url": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/principais-marcos-regulatorios/"
+  },
+  {
+    "id": "rfb-manuais",
+    "name": "Receita Federal — Manuais RTC",
+    "url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/reforma-tributaria-do-consumo"
+  },
+  {
+    "id": "lc214",
+    "name": "Planalto — Lei Complementar 214/2025",
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm"
+  },
+  {
+    "id": "fazenda-reforma",
+    "name": "Ministério da Fazenda — Reforma Tributária",
+    "url": "https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria"
+  },
+  {
+    "id": "cgibs-portal",
+    "name": "CGIBS — Portal",
+    "url": "https://www.cgibs.gov.br/"
+  },
+  {
+    "id": "confaz-portal",
+    "name": "CONFAZ — Portal",
+    "url": "https://www.confaz.fazenda.gov.br/"
+  }
+]
