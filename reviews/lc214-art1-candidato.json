@@ -1,0 +1,31 @@
+{
+  "status": "PENDENTE_REVISAO_HUMANA_NAO_PUBLICAR",
+  "tipo": "proposta_de_referencia",
+  "chave_documento_sugerida": "lc214-2025-art1",
+  "norma": "Lei Complementar nº 214, de 16 de janeiro de 2025",
+  "dispositivo": "art. 1º, caput, incisos I e II",
+  "conexao_efeitos": "art. 544, inciso VI, da LC nº 214/2025",
+  "url_oficial": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+  "url_secundaria_oficial": "https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/reforma-tributaria-do-consumo/legislacao/",
+  "consulta_preliminar_em": "2026-11-13",
+  "ementa_resumida": "O art. 1º institui o Imposto sobre Bens e Serviços (IBS), de competência compartilhada, e a Contribuição Social sobre Bens e Serviços (CBS), de competência da União.",
+  "trecho_curto_conferido": "Art. 1º Ficam instituídos:",
+  "data_lei": "2025-01-16",
+  "inicio_efeitos_dispositivo_candidato": "2026-01-01",
+  "observacao_vigencia": "O art. 544 determina vigência na data da publicação e diferencia datas de produção de efeitos. O art. 1º integra os demais dispositivos contemplados no inciso VI. Não confundir com cobrança, alíquota ou obrigação fiscal em cada fase.",
+  "alteracoes_posteriores_a_revisar": [
+    "LC nº 227/2026",
+    "eventuais atos posteriores e retificações"
+  ],
+  "revisao_humana_obrigatoria": [
+    "Confirmar redação compilada do art. 1º e incisos I e II no Planalto.",
+    "Confirmar vigência e produção de efeitos conforme art. 544, VI; verificar ressalvas específicas.",
+    "Confirmar ausência de alterações posteriores ao conteúdo do dispositivo, revogação, retificação e atos interpretativos.",
+    "Salvar evidência/snapshot identificável do texto utilizado; hash do HTML normalizado de página inteira não substitui preservação da fonte.",
+    "Indicar nome do revisor, data da revisão e link do Pull Request próprio antes de criar arquivo approved/*.record.json.",
+    "Testar RLS e obter confirmação de publicação pelo MCP após aprovação."
+  ],
+  "apta_para_publicar": false,
+  "reviewed_by": null,
+  "reviewed_at": null
+}
