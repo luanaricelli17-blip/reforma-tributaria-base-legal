@@ -1,5 +1,5 @@
 {
-  "status": "PENDENTE_REVISAO_HUMANA_NAO_PUBLICAR",
+  "status": "PENDENTE_APROVACAO_JURIDICA_FORMAL_NAO_PUBLICAR",
   "tipo": "proposta_de_referencia",
   "chave_documento_sugerida": "lc214-2025-art1",
   "norma": "Lei Complementar nº 214, de 16 de janeiro de 2025",
@@ -14,18 +14,33 @@
   "inicio_efeitos_dispositivo_candidato": "2026-01-01",
   "observacao_vigencia": "O art. 544 determina vigência na data da publicação e diferencia datas de produção de efeitos. O art. 1º integra os demais dispositivos contemplados no inciso VI. Não confundir com cobrança, alíquota ou obrigação fiscal em cada fase.",
   "alteracoes_posteriores_a_revisar": [
-    "LC nº 227/2026",
-    "eventuais atos posteriores e retificações"
+    "LC 227/2026: alteração do art. 544, inciso III, sem modificar a redação do art. 1º no texto consolidado consultado.",
+    "LC 235/2026: alterações dos arts. 82 e 174 da LC 214/2025, sem modificar a redação do art. 1º no texto consolidado consultado.",
+    "Verificar diariamente eventuais alterações, retificações, revogações ou atos posteriores antes de publicar o registro."
   ],
   "revisao_humana_obrigatoria": [
-    "Confirmar redação compilada do art. 1º e incisos I e II no Planalto.",
-    "Confirmar vigência e produção de efeitos conforme art. 544, VI; verificar ressalvas específicas.",
-    "Confirmar ausência de alterações posteriores ao conteúdo do dispositivo, revogação, retificação e atos interpretativos.",
-    "Salvar evidência/snapshot identificável do texto utilizado; hash do HTML normalizado de página inteira não substitui preservação da fonte.",
-    "Indicar nome do revisor, data da revisão e link do Pull Request próprio antes de criar arquivo approved/*.record.json.",
-    "Testar RLS e obter confirmação de publicação pelo MCP após aprovação."
+    "Registrar declaração expressa de aprovação jurídica do dispositivo pelo revisor indicado, com data, evidência e escopo da conferência.",
+    "Confirmar formalmente no Planalto a redação consolidada do art. 1º e incisos I e II, inclusive alterações posteriores.",
+    "Confirmar a produção de efeitos pelo art. 544, VI, sem confundir com fases de cobrança e obrigações acessórias.",
+    "Preservar a versão/snapshot efetivamente conferida e seu hash de origem; o hash da página monitorada isoladamente não é prova de preservação do texto consolidado.",
+    "Criar em PR separado um registro aprovado com revisão documentada e revisão técnica de permissões antes de movê-lo para approved/.",
+    "Após publicação aprovada, validar leitura MCP, filtro published e exclusão de withdrawn."
   ],
   "apta_para_publicar": false,
   "reviewed_by": null,
-  "reviewed_at": null
+  "reviewed_at": null,
+  "revisor_indicado": "Luana Ricelli de Souza",
+  "verificacao_preliminar_fontes_oficiais": {
+    "verificado_em": "2026-11-13",
+    "texto_artigo_1": "O artigo 1º, incisos I e II, institui respectivamente o IBS de competência compartilhada e a CBS de competência da União; os dois incisos constam do texto consolidado consultado.",
+    "producao_efeitos": "Artigo 544, inciso VI: 1º de janeiro de 2026 para os demais dispositivos, categoria que inclui o art. 1º. Não equivale ao início integral da cobrança.",
+    "alteracao_superveniente_1": "LC 227/2026 modificou inclusive o art. 544, inciso III; não altera o texto do artigo 1º no consolidado consultado.",
+    "alteracao_superveniente_2": "LC 235/2026, art. 6º, altera outros dispositivos (arts. 82 e 174), não o art. 1º no texto oficial consultado.",
+    "fontes": [
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+      "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+      "https://www2.camara.leg.br/legin/fed/leicom/2026/leicomplementar-235-27-agosto-2026-799870-publicacaooriginal-181122-pl.html"
+    ],
+    "ressalva": "Verificação textual preliminar; não constitui aprovação jurídica formal nem substitui evidência preservada de versão e revisão expressa do responsável."
+  }
 }
