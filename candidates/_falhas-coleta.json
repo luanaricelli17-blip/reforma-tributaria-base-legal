@@ -1,0 +1,6 @@
+{
+  "status": "FALHAS",
+  "items": [
+    "confaz-portal: URLError: <urlopen error timed out>"
+  ]
+}
