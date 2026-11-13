@@ -4,6 +4,8 @@ import { env } from 'cloudflare:workers';
 import { z } from 'zod';
 
 // NÃO há endpoints de escrita: somente consulta a registros revisados.
+// Marcador público para distinguir o código publicado de bundles antigos.
+const WORKER_BUILD = 'rtc-supabase-probe-20261113-v1';
 function settings() {
   const base = (env.SUPABASE_URL || '').replace(/\/$/, '');
   const key = env.SUPABASE_PUBLISHABLE_KEY || '';
@@ -17,7 +19,20 @@ async function supaQuery(params) {
   const url = new URL(base + '/rest/v1/legal_norm_versions');
   for (const [k,v] of Object.entries(params)) url.searchParams.set(k, String(v));
   url.searchParams.set('publication_state','eq.published');
-  const res = await fetch(url, {headers:{'apikey':key,'Accept':'application/json'}, redirect:'manual'});
+  // Força o modo de redirecionamento suportado no próprio Request de saída.
+  // Ao construir o Request antes do fetch conseguimos identificar a etapa da falha.
+  let res;
+  try {
+    const outbound = new Request(url.toString(), {
+      method: 'GET',
+      headers: {'apikey': key, 'Accept': 'application/json'},
+      redirect: 'manual'
+    });
+    if (outbound.redirect !== 'manual') throw new Error('Modo de redirecionamento inesperado na requisição de saída.');
+    res = await fetch(outbound);
+  } catch (err) {
+    throw new Error('Falha no fetch Supabase [' + WORKER_BUILD + ']: ' + (err instanceof Error ? err.message : 'erro desconhecido'));
+  }
   // Cloudflare Workers não suporta redirect: 'error'. Nunca seguir redirecionamentos da API jurídica.
   if (res.status >= 300 && res.status < 400) {
     throw new Error('Redirecionamento inesperado do Supabase (HTTP ' + res.status + '). Consulta interrompida por segurança.');
@@ -26,7 +41,7 @@ async function supaQuery(params) {
   return res.json();
 }
 function textResult(data){return {content:[{type:'text',text:JSON.stringify(data,null,2)}]};}
-function errorResult(err){return {isError:true,content:[{type:'text',text:err instanceof Error ? err.message : 'Erro de consulta'}]};}
+function errorResult(err){return {isError:true,content:[{type:'text',text:'[' + WORKER_BUILD + '] ' + (err instanceof Error ? err.message : 'Erro de consulta')}]};}
 function fields(){return 'record_id,document_key,version,norm_type,norm_number,title,summary,official_url,reference_label,verified_excerpt,source_snapshot_sha256,retrieved_on,published_on,effective_from,effective_until,applicability,reviewed_by,reviewed_at,review_pr_url,created_at';}
 
 function createServer(){
@@ -73,7 +88,7 @@ const handler=createMcpHandler(createServer,{responseMode:'json'});
 export default {
   fetch(request,context,ctx){
     const url=new URL(request.url);
-    if (url.pathname==='/health') return new Response(JSON.stringify({ok:true,component:'rtc-mcp',note:'Health não valida Supabase ou vigência jurídica.'}), {headers:{'Content-Type':'application/json'}});
+    if (url.pathname==='/health') return new Response(JSON.stringify({ok:true,component:'rtc-mcp',worker_build:WORKER_BUILD,note:'Health não valida Supabase ou vigência jurídica.'}), {headers:{'Content-Type':'application/json'}});
     return handler(request,context,ctx);
   }
 };
