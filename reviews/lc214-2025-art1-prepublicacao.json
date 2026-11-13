@@ -30,9 +30,25 @@
     "LC nº 235/2026: alterou outros dispositivos (arts. 82 e 174), conforme cadastro de alterações da Câmara; não consta alteração ao art. 1º."
   ],
   "pendencias": [
-    "Revisora confirmar por escrito os efeitos do art. 544, VI, e alterações posteriores, com ciência de que a instituição não significa cobrança plena.",
-    "Salvar evidência preservada da versão oficial efetivamente consultada (arquivo, snapshot, data, SHA-256 calculado).",
-    "Revisar riscos de publicação no repositório público, automação de publish, RLS e segregação de função de revisor.",
-    "Preencher reviewed_by, reviewed_at com momento real da autorização, review_pr_url da aprovação final; só depois elaborar approved/*.record.json."
-  ]
+    "Adicionar PDF de 396 páginas à branch review/lc214-art1-prepublicacao no caminho evidencias/LC214_2025_Camara_texto_atualizado_2026-11-13.pdf; conferir SHA-256 de 3d5bfa0e65fbafd2787850dc75d2e8d3e6b797b9c0e5aa4922124ace7f41e1c6.",
+    "Confirmar formalmente os efeitos do art. 544, VI, e alterações posteriores, com ciência de que instituição não equivale a cobrança integral.",
+    "Revisar documentação técnica, fluxos de publicação, políticas RLS e autorização expressa da revisora em PR próprio.",
+    "Preencher reviewed_by/reviewed_at com data real da autorização e review_pr_url somente no registro final aprovado, via PR distinto."
+  ],
+  "evidencia_documental": {
+    "manifest_path": "evidencias/manifesto-lc214-2025-art1-2026-11-13.json",
+    "official_source": "Câmara dos Deputados — texto atualizado impresso em PDF",
+    "original_pdf_expected_git_path": "evidencias/LC214_2025_Camara_texto_atualizado_2026-11-13.pdf",
+    "original_pdf_sha256": "3d5bfa0e65fbafd2787850dc75d2e8d3e6b797b9c0e5aa4922124ace7f41e1c6",
+    "original_pdf_bytes": 4451569,
+    "original_pdf_pages": 396,
+    "evidence_pages": [
+      2,
+      353,
+      354
+    ],
+    "documentary_content_check": "Conferência feita no PDF de 396 páginas e na página oficial, com destaque para art. 1º, incisos I e II, e art. 544, VI.",
+    "pdf_committed_to_git": false,
+    "approval_scope": "Documentação técnica conferida; não substitui autorização expressa da revisora."
+  }
 }
