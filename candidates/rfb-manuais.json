@@ -1,0 +1,9 @@
+{
+  "source_id": "rfb-manuais",
+  "source_name": "Receita Federal — Manuais RTC",
+  "official_url": "https://www.gov.br/receitafederal/pt-br/centrais-de-conteudo/publicacoes/manuais/reforma-tributaria-do-consumo",
+  "sha256": "186f4b81edc883426f7753d6c78b39e16dbbc758348529b445da0f8fb273ff09",
+  "detected_at": "2026-11-13T06:24:30.178720+00:00",
+  "state": "PENDENTE_REVISAO",
+  "warning": "Mudança técnica na página não comprova mudança normativa ou vigência."
+}

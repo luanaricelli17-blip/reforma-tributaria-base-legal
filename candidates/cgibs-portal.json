@@ -1,0 +1,9 @@
+{
+  "source_id": "cgibs-portal",
+  "source_name": "CGIBS — Portal",
+  "official_url": "https://www.cgibs.gov.br/",
+  "sha256": "9ec90216880a02cfdd34730ae6540c9f91f2b09553c5106d23a883203aeb5dec",
+  "detected_at": "2026-11-13T06:24:30.178720+00:00",
+  "state": "PENDENTE_REVISAO",
+  "warning": "Mudança técnica na página não comprova mudança normativa ou vigência."
+}
