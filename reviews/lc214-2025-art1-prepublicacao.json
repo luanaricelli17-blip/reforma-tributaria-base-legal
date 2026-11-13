@@ -1,0 +1,56 @@
+{
+  "status_revisao": "AGUARDANDO_APROVACAO_FINAL_NAO_PUBLICAR",
+  "record_id": "lc214-2025-art1-v1",
+  "document_key": "lc214-2025-art1",
+  "version": 1,
+  "norm_type": "Lei Complementar",
+  "norm_number": "214/2025",
+  "title": "LC nº 214/2025 — art. 1º, incisos I e II: instituição do IBS e da CBS",
+  "summary": "O art. 1º institui o IBS, de competência compartilhada de Estados, Municípios e Distrito Federal, e a CBS, de competência da União. O art. 544, VI, prevê produção de efeitos para o dispositivo a partir de 01/01/2026; a instituição dos tributos não significa cobrança integral nessa data.",
+  "official_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+  "reference_label": "LC nº 214/2025, art. 1º, caput, incisos I e II; art. 544, VI",
+  "verified_excerpt": "Art. 1º Ficam instituídos: I - o Imposto sobre Bens e Serviços (IBS)",
+  "source_id": "lc214",
+  "source_snapshot_sha256": "665eca6db2b805c9a935c25b4d97c52b1662d8fcf6d51d56b712acdeecaa3d0e",
+  "observacao_hash": "Hash de HTML normalizado capturado pelo monitor do GitHub, NÃO é um snapshot imutável e exige verificação em fonte preservada.",
+  "retrieved_on": "2026-11-13",
+  "published_on": "2025-01-16",
+  "effective_from": "2026-01-01",
+  "effective_until": null,
+  "applicability": "Instituição legal do IBS e CBS. Não define isoladamente cobrança, alíquota ou obrigações acessórias; verificar normas de transição e atos posteriores para operações específicas.",
+  "revisor_indicado": "Luana Ricelli de Souza",
+  "review_comment_url": "https://github.com/luanaricelli17-blip/reforma-tributaria-base-legal/pull/8#issuecomment-6856376286",
+  "reviewed_by": null,
+  "reviewed_at": null,
+  "review_pr_url": null,
+  "publication_state": "PENDENTE_REVISAO_NAO_PUBLICAR",
+  "corroboration_url": "https://www2.camara.leg.br/legin/fed/leicom/2025/leicomplementar-214-16-janeiro-2025-796905-normaatualizada-pl.html",
+  "observacoes_alteracoes": [
+    "LC nº 227/2026: alteração ao art. 544, inciso III; a hipótese residual do inciso VI abrange o art. 1º.",
+    "LC nº 235/2026: alterou outros dispositivos (arts. 82 e 174), conforme cadastro de alterações da Câmara; não consta alteração ao art. 1º."
+  ],
+  "pendencias": [
+    "Arquivamento de PDF completo verificado no GitHub, SHA-256 4338ff7574e32745cb88ecb385dc5c37fba1068bb18d770c4e1e7a73b7de7912; conferir cadeia de custódia e atualização da norma antes da aprovação final.",
+    "Confirmar formalmente os efeitos do art. 544, VI, e alterações posteriores, com ciência de que instituição não equivale a cobrança integral.",
+    "Revisar documentação técnica, fluxos de publicação, políticas RLS e autorização expressa da revisora em PR próprio.",
+    "Preencher reviewed_by/reviewed_at com data real da autorização e review_pr_url somente no registro final aprovado, via PR distinto."
+  ],
+  "evidencia_documental": {
+    "manifest_path": "evidencias/manifesto-lc214-2025-art1-2026-11-13.json",
+    "official_source": "Câmara dos Deputados — texto atualizado impresso em PDF",
+    "original_pdf_expected_git_path": "evidencias/LC214_2025_Camara_texto_atualizado_2026-11-13.pdf",
+    "original_pdf_sha256": "4338ff7574e32745cb88ecb385dc5c37fba1068bb18d770c4e1e7a73b7de7912",
+    "original_pdf_bytes": 4476632,
+    "original_pdf_pages": 396,
+    "evidence_pages": [
+      2,
+      353,
+      354
+    ],
+    "documentary_content_check": "Conferência feita no PDF de 396 páginas e na página oficial, com destaque para art. 1º, incisos I e II, e art. 544, VI.",
+    "pdf_committed_to_git": true,
+    "approval_scope": "Documentação técnica conferida; não substitui autorização expressa da revisora.",
+    "git_blob_sha1": "8935fde4b28611cf1f9a0ec00839ee23f40cc419",
+    "integrity_note": "O PDF arquivado tem SHA-256 distinto da cópia inicialmente enviada, embora as 396 páginas apresentem o mesmo texto extraído; manifesto corrigido para o blob do GitHub."
+  }
+}
