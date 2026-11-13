@@ -17,7 +17,11 @@ async function supaQuery(params) {
   const url = new URL(base + '/rest/v1/legal_norm_versions');
   for (const [k,v] of Object.entries(params)) url.searchParams.set(k, String(v));
   url.searchParams.set('publication_state','eq.published');
-  const res = await fetch(url, {headers:{'apikey':key,'Accept':'application/json'}, redirect:'error'});
+  const res = await fetch(url, {headers:{'apikey':key,'Accept':'application/json'}, redirect:'manual'});
+  // Cloudflare Workers não suporta redirect: 'error'. Nunca seguir redirecionamentos da API jurídica.
+  if (res.status >= 300 && res.status < 400) {
+    throw new Error('Redirecionamento inesperado do Supabase (HTTP ' + res.status + '). Consulta interrompida por segurança.');
+  }
   if (!res.ok) throw new Error('Consulta Supabase indisponível (HTTP '+res.status+')');
   return res.json();
 }
