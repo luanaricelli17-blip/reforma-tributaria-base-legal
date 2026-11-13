@@ -1,0 +1,24 @@
+name: Validar revisão antes do merge
+on:
+  pull_request:
+    paths:
+      - 'approved/**'
+      - 'monitor/**'
+      - 'sync/**'
+      - 'tests/**'
+      - '.github/workflows/**'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testes de segurança estrutural
+        run: python -m unittest discover -s tests -v
+      - name: Validar registros para publicação
+        run: python sync/validate_records.py
