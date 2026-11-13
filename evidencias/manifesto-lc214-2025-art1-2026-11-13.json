@@ -7,25 +7,38 @@
   "original_pdf": {
     "file_name_for_git": "LC214_2025_Camara_texto_atualizado_2026-11-13.pdf",
     "expected_git_path": "evidencias/LC214_2025_Camara_texto_atualizado_2026-11-13.pdf",
-    "sha256": "3d5bfa0e65fbafd2787850dc75d2e8d3e6b797b9c0e5aa4922124ace7f41e1c6",
-    "size_bytes": 4451569,
+    "sha256": "4338ff7574e32745cb88ecb385dc5c37fba1068bb18d770c4e1e7a73b7de7912",
+    "size_bytes": 4476632,
     "page_count": 396,
     "generated_via": "Imprimir/Salvar como PDF da página oficial da Câmara (Chrome, Skia/PDF)",
     "pdf_creation_timestamp_utc": "2026-11-13T15:08:19Z",
-    "committed_to_git": false,
-    "note": "A referência aos bytes exatos somente estará arquivada no GitHub quando o PDF for adicionado à branch do PR #9. Não confundir hash com aprovação jurídica."
+    "committed_to_git": true,
+    "note": "Esta é a cópia arquivada na branch do PR #9. SHA-256 vale para os bytes deste PDF e não serve como comprovação isolada de vigência legal.",
+    "previous_pre_archiving_copy": {
+      "sha256": "3d5bfa0e65fbafd2787850dc75d2e8d3e6b797b9c0e5aa4922124ace7f41e1c6",
+      "size_bytes": 4451569,
+      "note": "PDF original enviado para análise em conversa; difere byte a byte do PDF arquivado no GitHub, mas as 396 páginas possuem texto extraído idêntico."
+    },
+    "git_blob_sha1": "8935fde4b28611cf1f9a0ec00839ee23f40cc419",
+    "archive_validation": "Hash do blob GitHub confirmado pelo cálculo de hash Git blob (SHA-1) sobre arquivo de 4476632 bytes disponível na sessão, e conferência integral de texto extraído das 396 páginas contra o original encaminhado."
   },
   "excerpt_pdf": {
     "file_name": "LC214_2025_evidencia_art1_art544_paginas_2_353_354.pdf",
-    "sha256": "a7382a8cb8157696074e25c20330909691a2afa4a78771d487768c6c4731763a",
-    "size_bytes": 85722,
+    "sha256": "df0325de1f27b9ae5157f81a393f0bc4b8ec10b4d0b56709f3e8c22a937c89de",
+    "size_bytes": 110667,
     "pages_original": [
       2,
       353,
       354
     ],
     "derived_from_original_pdf": true,
-    "committed_to_git": false
+    "committed_to_git": true,
+    "previous_pre_archiving_manifest_hash": {
+      "sha256": "a7382a8cb8157696074e25c20330909691a2afa4a78771d487768c6c4731763a",
+      "size_bytes": 85722,
+      "note": "Hash e tamanho constavam do manifesto anterior, mas não correspondem ao PDF reduzido realmente arquivado. Foram preservados somente no histórico de auditoria."
+    },
+    "git_blob_sha1": "3e0d1512f0b885e31d9d1ac2d344079ae427a427"
   },
   "verified_sections": [
     {
@@ -49,5 +62,6 @@
   "review_history_url": "https://github.com/luanaricelli17-blip/reforma-tributaria-base-legal/pull/8#issuecomment-6856376286",
   "final_publication_approval": false,
   "supabase_write_performed": false,
-  "warning": "Publicação em approved/*.record.json requer revisão humana final expressa e PR independente."
+  "warning": "Publicação em approved/*.record.json requer revisão humana final expressa e PR independente.",
+  "manifest_corrected_on": "2026-11-13"
 }
