@@ -1,0 +1,22 @@
+{
+  "record_id": "lc214-2025-art1-v1",
+  "document_key": "lc214-2025-art1",
+  "version": 1,
+  "norm_type": "Lei Complementar",
+  "norm_number": "214/2025",
+  "title": "LC nº 214/2025 — art. 1º, incisos I e II: instituição do IBS e da CBS",
+  "summary": "O art. 1º institui o IBS, de competência compartilhada entre Estados, Municípios e Distrito Federal, e a CBS, de competência da União. O art. 544, inciso VI, prevê produção de efeitos a partir de 1º de janeiro de 2026 para o artigo 1º. A instituição legal não significa cobrança integral nessa data.",
+  "official_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp214.htm",
+  "reference_label": "LC nº 214/2025, art. 1º, caput e incisos I e II; art. 544, inciso VI",
+  "verified_excerpt": "I - o Imposto sobre Bens e Serviços (IBS), de competência compartilhada entre Estados, Municípios e Distrito Federal, de que trata o art. 156-A da Constituição Federal; e",
+  "source_id": "lc214",
+  "source_snapshot_sha256": "665eca6db2b805c9a935c25b4d97c52b1662d8fcf6d51d56b712acdeecaa3d0e",
+  "retrieved_on": "2026-11-13",
+  "published_on": "2025-01-16",
+  "effective_from": "2026-01-01",
+  "applicability": "Alcance limitado à instituição do IBS e CBS (art. 1º) e à data de efeitos do dispositivo (art. 544, VI). Não prova exigibilidade integral, alíquotas aplicáveis ou obrigações acessórias para operações específicas; consultar regras de transição e atos posteriores. Revisão documental comprovada no PR #9, cuja evidência PDF tem SHA-256 distinto do hash de monitoramento Planalto registrado em source_snapshot_sha256.",
+  "reviewed_by": "Luana Ricelli de Souza",
+  "reviewed_at": "2026-11-13T15:25:16Z",
+  "review_pr_url": "https://github.com/luanaricelli17-blip/reforma-tributaria-base-legal/pull/9",
+  "publication_state": "published"
+}
