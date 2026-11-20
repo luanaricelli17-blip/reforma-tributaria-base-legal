@@ -44,7 +44,14 @@ def send(path, obj=None):
             content_type = response.headers.get("Content-Type", "")
             data = response.read(500000).decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
-        raise RuntimeError("Endpoint %s retornou HTTP %s" % (path, e.code)) from None
+        server = e.headers.get("Server", "não informado")
+        mitigated = e.headers.get("cf-mitigated", "não informado")
+        auth = bool(e.headers.get("WWW-Authenticate"))
+        kind = e.headers.get("Content-Type", "não informado")
+        raise RuntimeError(
+            "Endpoint %s retornou HTTP %s (server=%s, cf-mitigated=%s, www-authenticate=%s, content-type=%s)"
+            % (path, e.code, server, mitigated, auth, kind)
+        ) from None
     except urllib.error.URLError:
         raise RuntimeError("Falha de rede ao acessar %s" % path) from None
     if status == 202 and not data.strip():
