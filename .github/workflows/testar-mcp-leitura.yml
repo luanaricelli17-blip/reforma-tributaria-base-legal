@@ -1,0 +1,19 @@
+name: Testar MCP jurídico (somente leitura)
+on:
+  pull_request:
+    paths:
+      - '.github/workflows/testar-mcp-leitura.yml'
+      - 'checks/check_mcp_readonly.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  testar-mcp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar MCP e referência aprovada (sem escrita)
+        run: python checks/check_mcp_readonly.py
