@@ -1,6 +1,10 @@
 {
   "status": "FALHAS",
   "items": [
+    "rfb-marcos: URLError: <urlopen error [Errno 104] Connection reset by peer>",
+    "rfb-manuais: URLError: <urlopen error [Errno 104] Connection reset by peer>",
+    "lc214: RemoteDisconnected: Remote end closed connection without response",
+    "fazenda-reforma: URLError: <urlopen error [Errno 104] Connection reset by peer>",
     "confaz-portal: URLError: <urlopen error timed out>"
   ]
 }
