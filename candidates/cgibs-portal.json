@@ -2,8 +2,8 @@
   "source_id": "cgibs-portal",
   "source_name": "CGIBS — Portal",
   "official_url": "https://www.cgibs.gov.br/",
-  "sha256": "9ec90216880a02cfdd34730ae6540c9f91f2b09553c5106d23a883203aeb5dec",
-  "detected_at": "2026-11-13T06:24:30.178720+00:00",
+  "sha256": "f9df088e525620f47cee1a1f943852e22c00bd968db03ac37155a07145c80bc8",
+  "detected_at": "2026-11-28T12:02:11.916741+00:00",
   "state": "PENDENTE_REVISAO",
   "warning": "Mudança técnica na página não comprova mudança normativa ou vigência."
 }
